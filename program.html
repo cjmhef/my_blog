@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>yanshun|welcome</title>
+		<link rel="stylesheet" type="text/css" href="yanshun1.css">
+	</head>
+	<body>
+		<header>
+			<div class="title">
+				<h2>YanShun | <span id="span1">make life better</span></h2>
+				</div>
+			<div id="search">
+				<input type="text" placeholder="请输入关键字词...">
+				<button type="submit">搜索</button>
+				</div>
+			<div class="menu">
+				<ul>
+					
+					<li><a href="#">关于我</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">学校</a></li>
+					<li><a href="#">游戏</a></li>
+					<li><a href="#"><span style="color:#00B8B1;font-weight: bold;">编程</span></a></li>
+					<li><a href="#">文献</a></li>
+					<li  ><a href="yanshun1.html">主页</a></li>
+				
+					</ul>
+				</div>
+				
+			</header>
+			
+			<section class="section1" style="width:100% ;height: auto;">
+				
+					<h1 style="text-align: center;">数码时钟制作</h1>
+						<p style="text-indent: 2em;">看了别人家的js视频教程，觉得作者的思路很清晰，按照他的思路，我自己动作操作了一遍，并保存在我的博客上。完成之后，又总结了一遍思路，加深自己的理解。</p>
+					<h2>1、效果思路</h2>
+					    <p style="text-indent: 2em;">通过6张数字图片来显示当前的时刻；获取当前时间后，将时间转换成字符串，图片集看做数组，图片的src通过时间字符串所在位数决定。img[i].src = "img/"+time[i] + ".png"。一一对应后，使用setInterval实现间隔定时。</p>
+					<h2>2、获取系统时间</h2>
+					   <h3>2.1 Date对象</h3>
+					   <p style="text-indent: 2em;">通过Date对象来获取当前时间，它有很多属性，其中通过getHours、 getMinutes、 getSeconds分别获取时分秒</p>   
+					<h2>3、显示系统时间</h2>
+					  <h3> 3.1字符串连接</h3>
+					  <p style="text-indent: 2em;">若直接通过“+”将getHours、 getMinutes、 getSeconds进行连接，结果是相加，故要解决将数字时间转化为字符串时间，通过空位补零，顺便把数字时间转化为字符串时间</p>
+					  <h3> 3.2 空位补零</h3>
+					  <p style="text-indent: 2em;">通过if条件语句，实现空位补零。</p>
+					<h2>4、设置图片路径</h2>
+					 <h3>  4.1 charAt方法</h3>
+					
+				</section>
+				
+			
+			
+				
+			<footer>
+				<div class="wechat">
+					<img src="myWeChat.jpg" style="width:130px;height: 130px;margin: 0;padding: 0;">
+					<img src="wecha2.jpg" style="width:130px;height: 130px;margin: 0;padding: 0;">
+					<p style="text-align: center;">个人微信</p>
+					</div>
+				<div class="end">
+				<h2 style="color:#00B8B1;font-weight:bolder;">站点说明：</h2>
+				<p>1、本站个人博客日记，均为YanShun本人作品，个人可以使用，但是未经许可不得用于任何商业目的。</p>
+				<p>2、内容的完整度支持在chrome浏览器中查看，其他浏览器可能出现不兼容问题。</p>
+				<p>3、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：1130265190@qq.com</p>
+				</div>
+				</footer>
+	</body>
+	
+</html>
+
