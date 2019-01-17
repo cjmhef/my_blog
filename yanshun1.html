@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>yanshun|welcome</title>
 		<link rel="stylesheet" type="text/css" href="yanshun1.css">
+		<script type="text/javascript" src="yanshun1.js"></script>
 	</head>
 	<body>
 		<header>
@@ -17,7 +18,7 @@
 			<div class="menu">
 				<ul>
 					
-					<li><a href="#">关于我</a></li>
+					<li id="my1"><a  href="#" >关于我</a></li>
 					<li><a href="#">服务</a></li>
 					<li><a href="#">学校</a></li>
 					<li><a href="#">游戏</a></li>
@@ -52,8 +53,18 @@
 			<div class="right">
 				<section class="section12">
 					<div>
-						自我介绍
+						最近更新
 						</div>
+						<div id="my">
+							<ul>
+								<li>姓名：鲁班七号</li>
+								<li>性别：女</li>
+								<li>姓名：鲁班七号</li>
+								<li>姓名：鲁班七号</li>
+								<li>姓名：鲁班七号</li>
+								</ul>
+							</div>
+						
 					</section>
 					<section class="section22">
 						<div id="calandar" style="height:300px;">
@@ -86,7 +97,28 @@
 				</footer>
 	</body>
 	<script>
+		//个人名片
+		var oa = document.getElementById("my1");
+			var oAboutme = document.getElementById("my");
+			oa.onmouseover = function() {
+				oAboutme.style.display = "inline-block";
+			};
+			oa.onmouseout = function() {
+				timer1 = setTimeout(function() {
+					oAboutme.style.display = "none"
+				}, 1000);
+			};
+			oAboutme.onmouseover = function() {
+				clearTimeout(timer1);
+			};
+			oAboutme.onmouseout = function() {
+				timer1 = setTimeout(function() {
+					oAboutme.style.display = "none"
+				}, 1000);
+			};
+		
 				
+				// 数码时钟
 					var img = document.getElementById("timerimg").getElementsByTagName("img");
 				function timer(){	
 					var getTime = new Date();

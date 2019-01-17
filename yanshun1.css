@@ -20,7 +20,8 @@ header div,header div h2{
 	font-weight: bold;
 color: red;
 	margin-top: 10px ;
-	
+	width:25%;
+	overflow: hidden;
 }
 #span1{	font-style: italic;
 	font-family: segoe script;
@@ -28,14 +29,15 @@ color: red;
 .menu ul{
 	display: inline;
 	margin-bottom: 0 auto;
-	
+	width:55%;
+	overflow: hidden;
 }
 .menu ul li{
 	
 	float:right;
 	 display: inline;
 	padding: 23px; 
-
+overflow: hidden;
 	font-size: 20px;
 	font-family: simsun;
 	
@@ -52,8 +54,9 @@ color: red;
 #search {
 	position: absolute;
 	left:37%;
-	margin-top: 18px;
-	
+	margin-top: 20px;
+	width:20%;
+	overflow: hidden;
 }
 
 
@@ -87,6 +90,7 @@ color: red;
 	height:500px;
 	border: beige 2px solid;
 }
+
 .section3{
 	width: 70%;
 	height:500px;
@@ -96,6 +100,15 @@ color: red;
 	width: 70%;
 	height:500px;
 	border: beige 2px solid;
+}
+#my{
+	position: absolute;
+	right: 0px;
+	top:-3px;
+	background-color: lightpink;
+	height: 300px;
+	width:350px;
+	display:none;
 }
 
 footer{
